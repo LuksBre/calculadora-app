@@ -17,7 +17,12 @@ export default function App() {
       <View style={styles.topbar}>
       <View>
 
-      <Display />
+      <Display 
+        theme={theme}
+        expression={"100 +"}
+        value={0}
+      
+      />
 
         </View>
         <Pressable 
@@ -35,6 +40,20 @@ export default function App() {
               {mode ==="dark" ? "Escuro": "Claro"}
             </Text>
         </Pressable>
+
+          <View style={styles.pad}>
+            {}
+            <View style={styles.row}>
+            <CalcButton theme={theme} label="C" Variant="neutral" onpress={() => {}}>
+            <CalcButton theme={theme} label="+/-" Variant="neutral" onpress={() => {}}>
+            <CalcButton theme={theme} label="%" Variant="neutral" onpress={() => {}}>
+            <CalcButton theme={theme} label="÷" Variant="op" onpress={() => {}}>
+
+            </CalcButton>
+            </View>
+
+          </View>
+
       </View>
 
       <Display
