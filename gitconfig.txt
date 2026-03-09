@@ -1,4 +1,4 @@
-git config --global user.name gallojunior
-git config --global user.email gallojunior@gmail.com
+git config --global user.name LuksBre
+git config --global user.email lucasbregadioli8@gmail.com
 
 npx create-expo-app@latest calculadora --template blank

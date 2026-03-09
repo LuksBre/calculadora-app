@@ -1,21 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
 
 export default function Display({ theme, expression, value }) {
   return (
     <View
-    style={[
-      styles.wrap,
-      {
-        backgroundColor: theme.card,
-        borderColor: theme.stroke,
-        shadowColor: theme.Dark,
-      }
-    ]}
+      style={[
+        styles.wrap,
+        {
+          backgroundColor: theme.card,
+          borderColor: theme.stroke,
+          shadowColor: theme.shadowDark,
+        }
+      ]}
     >
-      <Text 
-      numberOfLines={1}
-      style={[styles.expression, { color: theme.textDim }]}
+      <Text
+        numberOfLines={1}
+        style={[styles.expression, { color: theme.textDim }]}
       >
         {expression}
       </Text>
@@ -37,10 +37,9 @@ const styles = StyleSheet.create({
     paddingTop: 18,
     paddingBottom: 14,
     marginBottom: 18,
-    ShadowOpacity: 0.35,
+    shadowOpacity: 0.35,
     shadowRadius: 22,
-    shadowOffset: 22,
-    shadowOffSet: { width: 0, height: 14 },
+    shadowOffset: { width: 0, height: 14 },
     elevation: 8,
   },
   expression: {
